@@ -49,12 +49,13 @@ The plugin works on **Linux**, both on **x86** and **x64** architectures.
 
 1. Git clone the [Volatility](https://github.com/volatilityfoundation/volatility) repository or [Download a Release](http://www.volatilityfoundation.org/#!releases/component_71401);
 2. Git clone this repository;
-3. Copy `lsns.py` under the path `./volatility/plugins/linux`.
+3. Copy `lsns.py` under the path `$VOLATILITY_PATH/volatility/plugins/linux`.
 
 ```bash
 $ export VOLATILITY_PATH=<path_for_volatility>
 $ export LSNS_PATH=<path_for_lsns>
 $ mkdir $VOLATILITY_PATH
+$ mkdir $LSNS_PATH
 $ git clone https://github.com/volatilityfoundation/volatility $VOLATILITY_PATH
 $ git clone https://github.com/Pasquale95/lsns.git $LSNS_PATH
 $ cp $LSNS_PATH/lsns.py $VOLATILITY_PATH/volatility/plugins/linux/
